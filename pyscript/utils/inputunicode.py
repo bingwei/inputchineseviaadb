@@ -38,6 +38,8 @@ def get_encoded_character(text):
     run_cmd("adb shell input text %r"%text_list[-1])
 
     run_cmd(click_dpad_down)
+    if __DEBUG__:
+        run_cmd(click_dpad_down)
     run_cmd(click_dpad_enter)
     print("Done")
 

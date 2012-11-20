@@ -19,3 +19,5 @@ Input unicode text via adb and then convert to Chinese characters
 = Example
 
 `python pyscript/testScript.py`
+
+![image](http://img.my.csdn.net/uploads/201211/20/1353404033_1408.png)
