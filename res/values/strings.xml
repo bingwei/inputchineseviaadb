@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Input Unicode</string>
+    <string name="title">Convert unicode to encoded characters</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Main</string>
+    <string name="hint_text">Input unicode here</string>
+    <string name="show_encoded_text">Chinese charaters:</string>
+    <string name="copy">Copy to clipboard</string>
+    <string name="copy_then_quit">Copy to clipboard and quit</string>
+
+</resources>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        />
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/unicodeText"
+        android:hint="@string/hint_text"
+        />
+   <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:orientation="vertical" 
+   	    android:layout_margin="20dp"
+		>
+	   	<Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/copy_then_quit"
+	        android:id="@+id/copy_then_quit"
+        />
+	   	<Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/copy"
+	        android:id="@+id/copy"
+        />
+	</LinearLayout>
+    <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/encodedTextHead"
+	        android:text="@string/show_encoded_text"
+	        />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/encodedText"
+	        android:text=""
+	        />
+    </LinearLayout>
+    
+
+
+</LinearLayout>
