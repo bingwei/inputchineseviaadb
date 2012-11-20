@@ -10,10 +10,12 @@ Input unicode text via adb and then convert to Chinese characters
 = Usage
 
 ```python
-    >>> import os
-    >>> os.chdir("pyscript")
-    >>> import utils
-    >>> test_text = u"test: eng 123 黑色"
-    >>> utils.get_encoded_character(test_text)
+>>> import os
+>>> os.chdir("pyscript")
+>>> import utils
+>>> test_text = u"test: eng 123 黑色"
+>>> utils.get_encoded_character(test_text)
 ```
+= Example
 
+`python pyscript/testScript.py`
