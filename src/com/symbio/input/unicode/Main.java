@@ -43,7 +43,7 @@ public class Main extends Activity {
 						encodedText.setText(text);
 						
 						ClipboardManager cm =(ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-						cm.setText(encodedText.getText());
+						cm.setText(text);
 					}
 					if(v.equals(btnCopyQuit) && unicodeText.getText().length() != 0){
 						Main.this.finish();

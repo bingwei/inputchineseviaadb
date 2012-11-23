@@ -2,6 +2,7 @@
 #!/bin/env python
 
 import subprocess as SP
+import string
 
 __DEBUG__ = 1 
 start_app = "adb shell am start -an com.symbio.input.unicode/.Main"
@@ -24,13 +25,24 @@ def run_cmd(cmd, with_error = False):
     except OSError, err:
         print(err)
 
+def is_pure_alnum(text):
+    tmp_text = text.encode('utf8')
+    print(tmp_text)
+    for i in tmp_text:
+        if i.lower() not in \
+            "".join([string.ascii_lowercase,\
+                string.digits,string.punctuation]):
+            print("yes")
+            return False
+    return True
+
 
 def get_encoded_character(text):
     log("%r"%text)
     run_cmd(start_app)
     text_list = text.split()
     log(text_list)
-    text_list = [x.encode('utf8') if x.upper()!=x or x.isdigit() else x for x in text_list]
+    text_list = [x.encode('utf8') if is_pure_alnum(x) else x for x in text_list]
     log(text_list)
     for t in text_list[:-1]:
         run_cmd("adb shell input text %r"%t)
