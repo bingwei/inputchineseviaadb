@@ -42,7 +42,7 @@ def get_encoded_character(text):
     run_cmd(start_app)
     text_list = text.split()
     log(text_list)
-    text_list = [x.encode('utf8') if is_pure_alnum(x) else x.encode(‘unicode-escape’) for x in text_list]
+    text_list = [x.encode('utf8') if is_pure_alnum(x) else x.encode('unicode-escape') for x in text_list]
     log(text_list)
     for t in text_list[:-1]:
         run_cmd("adb shell input text %r"%t)
